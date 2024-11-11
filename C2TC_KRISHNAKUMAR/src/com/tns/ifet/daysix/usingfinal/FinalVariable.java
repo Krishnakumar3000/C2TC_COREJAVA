@@ -1,32 +1,34 @@
+// Program to demonstrate final Variable
 package com.tns.ifet.daysix.usingfinal;
 
 public class FinalVariable {
-			// final int x; // final instance variable must be initialized
 
-			final int x = 100;
+	// final int x; // final instance variable must be initialized
 
-			// Declare a static blank final variable.
-			final static int Y;
+	final int x = 100;
 
-			// Declare & intialize static final variable.
-			final static int Z = 10;
+	// Declare a static blank final variable.
+	final static int Y;
 
-			// instatnce method
-			void change() {
-				x = 30; // final variables can't be reassigned
-				Y = 200; // final static variables can't be reassigned
-			}
+	// Declare & intialize static final variable.
+	final static int Z = 10;
 
-			@Override
-			public String toString() {
-				return "FinalVariable [x=" + x + ", Y" + Y + "]";
-			}
+	// instatnce method
+	void change() {
+		x = 30; // final variables can't be reassigned
+		Y = 200; // final static variables can't be reassigned
+	}
 
-			// Declare a static block to initialize the final static variable.
-			static {
-				Y = 20;
-				Z = 100; // Once intialized can't be reassigned
-				System.out.println("Value of Y: " + Y);
-			}
+	@Override
+	public String toString() {
+		return "FinalVariable [x=" + x + ", Y" + Y + "]";
+	}
 
-		}
+	// Declare a static block to initialize the final static variable.
+	static {
+		Y = 20;
+		Z = 100; // Once intialized can't be reassigned
+		System.out.println("Value of Y: " + Y);
+	}
+
+}

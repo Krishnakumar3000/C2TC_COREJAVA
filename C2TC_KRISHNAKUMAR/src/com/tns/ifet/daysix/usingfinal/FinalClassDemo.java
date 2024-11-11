@@ -1,5 +1,5 @@
+//Program to demonstrate final class
 package com.tns.ifet.daysix.usingfinal;
-
 
 final class FinalClass {
 	void show() {
